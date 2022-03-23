@@ -1,0 +1,37 @@
+12.7350 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc7c9682a58>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fc7c8937400>, multiSample=False, name='window1', numSamples=2, pos=[378.0, 245.5], screen=0, size=array([3024, 1964]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.7355 	EXP 	window1: mouseVisible = True
+12.7355 	EXP 	window1: recordFrameIntervals = False
+12.9030 	EXP 	window1: recordFrameIntervals = True
+13.1196 	EXP 	window1: recordFrameIntervals = False
+14.3453 	EXP 	Created intro_slide = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='intro_slide', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Get ready to start the experiment…', units='height', win=Window(...), wrapWidth=1)
+14.3462 	EXP 	Created press_key = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='press_key', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.4452 	EXP 	Sound tone set volume 0.500
+14.4506 	EXP 	Created outro_slide = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='outro_slide', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thanks!', units='height', win=Window(...), wrapWidth=1)
+14.4618 	EXP 	intro_slide: autoDraw = True
+24.4859 	EXP 	Imported conditions.csv as conditions, 3 conditions, 1 params
+24.4865 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+24.4867 	EXP 	New trial (rep=0, index=0): OrderedDict([('sound_start', 3)])
+24.4967 	EXP 	intro_slide: autoDraw = False
+24.4967 	EXP 	press_key: text = 'Press space when you hear a tone'
+24.4967 	EXP 	press_key: autoDraw = True
+27.4859 	EXP 	Sound tone started
+27.9257 	EXP 	Sound tone stopped
+27.9274 	EXP 	New trial (rep=0, index=1): OrderedDict([('sound_start', 5)])
+27.9344 	DATA 	Keypress: space
+27.9376 	EXP 	press_key: autoDraw = False
+27.9376 	EXP 	press_key: text = 'Press space when you hear a tone'
+27.9376 	EXP 	press_key: autoDraw = True
+32.9394 	EXP 	Sound tone started
+33.1913 	EXP 	Sound tone stopped
+33.1929 	EXP 	New trial (rep=0, index=2): OrderedDict([('sound_start', 4)])
+33.1982 	DATA 	Keypress: space
+33.2028 	EXP 	press_key: autoDraw = False
+33.2028 	EXP 	press_key: text = 'Press space when you hear a tone'
+33.2028 	EXP 	press_key: autoDraw = True
+37.1871 	EXP 	Sound tone started
+37.4576 	EXP 	Sound tone stopped
+37.5015 	DATA 	Keypress: space
+37.5046 	EXP 	press_key: autoDraw = False
+37.5046 	EXP 	outro_slide: autoDraw = True
+38.4863 	EXP 	outro_slide: autoDraw = False
+38.5101 	EXP 	window1: mouseVisible = True
