@@ -1,5 +1,0 @@
-﻿sound_start,trials_loop.thisRepN,trials_loop.thisTrialN,trials_loop.thisN,trials_loop.thisIndex,intro_slide.started,intro_slide.stopped,press_key.started,press_key.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,tone.started,tone.stopped,outro_slide.started,outro_slide.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-3,0,0,0,2,14.461776459007524,None,24.4967128749704,None,['space'],[3.4200207500252873],24.4967128749704,None,27.485852429794612,None,,,001,001,2022_Mar_23_1717,SoundTaskDemo,2021.2.3,59.40554372730382,
-5,0,1,1,0,,,27.93760695902165,None,['space'],[5.238035749993287],27.93760695902165,None,32.939397054875734,None,,,001,001,2022_Mar_23_1717,SoundTaskDemo,2021.2.3,59.40554372730382,
-4,0,2,2,1,,,33.20276991697028,None,['space'],[4.240575833013281],33.20276991697028,None,37.187105179799254,None,,,001,001,2022_Mar_23_1717,SoundTaskDemo,2021.2.3,59.40554372730382,
-,,,,,,,,,,,,,,,37.5046397090191,None,,,,,,,

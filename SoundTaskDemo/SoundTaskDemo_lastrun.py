@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Wed Mar 23 17:17:23 2022
+    on Thu Mar 24 10:12:24 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -103,9 +103,9 @@ press_key = visual.TextStim(win=win, name='press_key',
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
-tone = sound.Sound('377', secs=0.5, stereo=True, hamming=True,
+tone = sound.Sound('440', secs=0.5, stereo=True, hamming=True,
     name='tone')
-tone.setVolume(0.5)
+tone.setVolume(0.2)
 
 # Initialize components for Routine "outro_routine"
 outro_routineClock = core.Clock()
@@ -191,23 +191,23 @@ thisExp.addData('intro_slide.started', intro_slide.tStartRefresh)
 thisExp.addData('intro_slide.stopped', intro_slide.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
-trials_loop = data.TrialHandler(nReps=1.0, method='random', 
+trials = data.TrialHandler(nReps=1.0, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('conditions.csv'),
-    seed=None, name='trials_loop')
-thisExp.addLoop(trials_loop)  # add the loop to the experiment
-thisTrials_loop = trials_loop.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrials_loop.rgb)
-if thisTrials_loop != None:
-    for paramName in thisTrials_loop:
-        exec('{} = thisTrials_loop[paramName]'.format(paramName))
+    seed=None, name='trials')
+thisExp.addLoop(trials)  # add the loop to the experiment
+thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+if thisTrial != None:
+    for paramName in thisTrial:
+        exec('{} = thisTrial[paramName]'.format(paramName))
 
-for thisTrials_loop in trials_loop:
-    currentLoop = trials_loop
-    # abbreviate parameter names if possible (e.g. rgb = thisTrials_loop.rgb)
-    if thisTrials_loop != None:
-        for paramName in thisTrials_loop:
-            exec('{} = thisTrials_loop[paramName]'.format(paramName))
+for thisTrial in trials:
+    currentLoop = trials
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
+    if thisTrial != None:
+        for paramName in thisTrial:
+            exec('{} = thisTrial[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "trial"-------
     continueRoutine = True
@@ -216,8 +216,8 @@ for thisTrials_loop in trials_loop:
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
-    tone.setSound('377', secs=0.5, hamming=True)
-    tone.setVolume(0.5, log=False)
+    tone.setSound('440', secs=0.5, hamming=True)
+    tone.setVolume(0.2, log=False)
     # keep track of which components have finished
     trialComponents = [press_key, key_resp, tone]
     for thisComponent in trialComponents:
@@ -308,24 +308,24 @@ for thisTrials_loop in trials_loop:
     for thisComponent in trialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials_loop.addData('press_key.started', press_key.tStartRefresh)
-    trials_loop.addData('press_key.stopped', press_key.tStopRefresh)
+    trials.addData('press_key.started', press_key.tStartRefresh)
+    trials.addData('press_key.stopped', press_key.tStopRefresh)
     # check responses
     if key_resp.keys in ['', [], None]:  # No response was made
         key_resp.keys = None
-    trials_loop.addData('key_resp.keys',key_resp.keys)
+    trials.addData('key_resp.keys',key_resp.keys)
     if key_resp.keys != None:  # we had a response
-        trials_loop.addData('key_resp.rt', key_resp.rt)
-    trials_loop.addData('key_resp.started', key_resp.tStartRefresh)
-    trials_loop.addData('key_resp.stopped', key_resp.tStopRefresh)
+        trials.addData('key_resp.rt', key_resp.rt)
+    trials.addData('key_resp.started', key_resp.tStartRefresh)
+    trials.addData('key_resp.stopped', key_resp.tStopRefresh)
     tone.stop()  # ensure sound has stopped at end of routine
-    trials_loop.addData('tone.started', tone.tStartRefresh)
-    trials_loop.addData('tone.stopped', tone.tStopRefresh)
+    trials.addData('tone.started', tone.tStartRefresh)
+    trials.addData('tone.stopped', tone.tStopRefresh)
     # the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1.0 repeats of 'trials_loop'
+# completed 1.0 repeats of 'trials'
 
 
 # ------Prepare to start Routine "outro_routine"-------

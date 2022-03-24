@@ -138,11 +138,11 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-        <Param name="volume" updates="constant" val="0.5" valType="num"/>
+        <Param name="volume" updates="constant" val="0.2" valType="num"/>
       </SoundComponent>
     </Routine>
-    <Routine name="outro_routine">
-      <TextComponent name="outro_slide">
+    <Routine name="exit_routine">
+      <TextComponent name="exit_slide">
         <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
@@ -152,7 +152,7 @@
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
-        <Param name="name" updates="None" val="outro_slide" valType="code"/>
+        <Param name="name" updates="None" val="exit_slide" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
@@ -171,19 +171,19 @@
   </Routines>
   <Flow>
     <Routine name="intro_routine"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_loop">
+    <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('sound_start', 5)]), OrderedDict([('sound_start', 4)]), OrderedDict([('sound_start', 3)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sound_start', 5.0)]), OrderedDict([('sound_start', 4.0)]), OrderedDict([('sound_start', 3.0)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="conditions.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="num"/>
-      <Param name="name" updates="None" val="trials_loop" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="trial"/>
-    <LoopTerminator name="trials_loop"/>
-    <Routine name="outro_routine"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="exit_routine"/>
   </Flow>
 </PsychoPy2experiment>
